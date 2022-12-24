@@ -167,9 +167,9 @@ fr.set_task_factory(tf)
 fr.set_movemap_factory(mmf)
 fr.min_type("lbfgs_armijo_nonmonotone") 
 
-### Run FastDesign to generate N=100 decoys
-job = pyrosetta.PyJobDistributor("decoy", 100, scorefxn, compress=False)
-# The above constructs a job distibutor that will create 100 decoys
+### Run FastDesign to generate N=10000 decoys
+job = pyrosetta.PyJobDistributor("decoy", 10000, scorefxn, compress=False)
+# The above constructs a job distibutor that will create 10000 decoys
 #  named decoy_1.pdb to filename_N.pdb and a score file, decoy.fasc.
 # The PyJobDistributor will not overwrite a file already in existence.
 # When initialized, the next available output file is started as an 
